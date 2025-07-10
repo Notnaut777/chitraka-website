@@ -76,17 +76,14 @@ nav {
 
 .logo img {
     height: 50px;
-    animation: logoPulse 2s ease-in-out infinite alternate;
+    
     opacity: 1;
 }
 
-@keyframes logoPulse {
-    0% {
-        filter: drop-shadow(0 0 5px var(--primary-yellow));
-    }
-    100% {
-        filter: drop-shadow(0 0 15px var(--primary-yellow)) drop-shadow(0 0 25px var(--accent-yellow));
-    }
+
+.logo img:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
 }
 
 .nav-menu {
